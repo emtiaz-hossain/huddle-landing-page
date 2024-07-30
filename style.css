@@ -1,0 +1,230 @@
+/* font-family: "Poppins", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* font-family: "Open Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --heading-clr: hsl(192, 100%, 9%);
+    --text-clr: hsl(208, 11%, 55%);
+    --btn-bg: hsl(322, 100%, 66%); 
+}
+
+/* RESET */
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+h2{
+    color: var(--heading-clr);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+/* -------------------------- HEADER SECTION START FROM HERE --------------------------*/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg-hero-desktop.svg);
+    background-color: #EDFBFE;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn a{
+    background-color: white;
+    padding: 15px 60px;
+    text-decoration: none;
+    color: var(--heading-clr);
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn a:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    width: 40%;
+}
+.left h1{
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 4rem;
+    color: var(--heading-clr);
+}
+.left p{
+    font-size: 18px;
+    color: var(--heading-clr);
+    opacity: 0.8;
+    font-family: "Open Sans", sans-serif; 
+    margin-bottom: 54px;
+    margin-top: 27px;
+    font-weight: 500;
+}
+.right{
+    width: 60%;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.right img{
+    width: 43rem;
+}
+.cta-btn{
+    background-color: var(--btn-bg);
+    text-decoration: none;
+    padding: 17px 50px;
+    border-radius: 50px;
+    color: white;
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 600;
+} 
+.cta-btn:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+/* ====================BOXES SECTION START FROM HERE =============== */
+#boxes{
+    background-color: crimson;
+    width: 100%;
+    height: 200vh;
+}
+
+.box{
+    height: 400px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+.box:nth-child(1){
+    margin-top: 10rem;
+}
+.box:nth-child(2){
+    flex-direction: row-reverse;
+}
+.box-left{
+    width: 40%;
+}
+.box-left p{
+    font-family: "Poppins", sans-serif;
+    color: var(--text-clr);
+    margin-top: 10px;
+    font-size: 17px;   
+    font-weight: 400;
+}
+.box-right img{
+    width: 22rem;
+}
+
+/* CARD SECTION START FROM HERE */
+
+.card{
+    width: 800px;
+    height: 250px;
+    background-color: white;
+    margin:auto;
+    margin-top: 10rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #00252E;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.fotter-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.clm-1{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #B9CACE;
+    font-family: "Open Sans", sans-serif;
+}
+.clm-1 p span i{
+    font-size: 20px;
+}
+.clm-1 p {
+   word-spacing: 1.5px;
+   line-height: 1.3rem;
+}
+
+.clm-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+.clm-2 a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: #B9CACE;
+}
+.clm-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+.clm-3 a{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: #B9CACE;
+}
+.clm-4 i{
+    font-size: 2rem;
+    color: #B9CACE;
+    padding: 0px 3px;
+}
+.clm-2 a:hover{
+    border-bottom: 1.8px solid #B9CACE;
+}
+.clm-3 a:hover{
+    border-bottom: 1.8px solid #B9CACE;
+}
